@@ -10,5 +10,5 @@ const router = express.Router();
 router.post("/register", registerUsers);
 router.post("/login", loginUsers);
 router.get("/current", validateToken, currentUsers);
-
+// all user routes
 module.exports = router;
