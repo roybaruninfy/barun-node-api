@@ -7,6 +7,11 @@ const {
   putContact,
   deleteContact,
 } = require("../controllers/contactControllers");
+const validateToken = require("../middlewares/validateTokenHandler");
+
+// validate all the contact routes at one go
+router.use(validateToken);
+// validate all the contact routes at one go
 
 // @desc: get method for the contact list
 // @desc: post method for the contact list
